@@ -1,3 +1,4 @@
+import 'package:bold/app/constants/ColorConstants.dart';
 import 'package:flutter/material.dart';
 
 import '../../util/ColorUtil.dart';
@@ -15,7 +16,8 @@ class LoginButton extends StatelessWidget {
         child: ElevatedButton(
           onPressed: onPressed,
           style: ElevatedButton.styleFrom(
-              backgroundColor: ColorUtil().getColor("#FF740A")),
+              backgroundColor:
+                  ColorUtil().getColor(ColorConstants().baseColorHex)),
           child: Text(buttonText),
         ));
   }
