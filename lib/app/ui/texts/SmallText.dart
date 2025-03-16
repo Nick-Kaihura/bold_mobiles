@@ -7,6 +7,10 @@ class SmallText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(style: Theme.of(context).textTheme.headlineSmall, text);
+    return Text(
+        style: const TextStyle(
+          fontFamily: 'TrajanPro',
+        ),
+        text);
   }
 }
