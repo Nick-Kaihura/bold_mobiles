@@ -10,7 +10,8 @@ class StandardTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        width: 400.0,
+        width: 343,
+        height: 49,
         child: TextField(
             decoration: InputDecoration(
               labelText: label,

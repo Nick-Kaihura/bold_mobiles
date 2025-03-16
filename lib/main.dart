@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'app/ui/button/LoginButton.dart';
-import 'app/ui/textField/StandardTextField.dart';
+import 'app/ui/button/ProceedButton.dart';
+import 'app/ui/textField/StandardInputField.dart';
 import 'app/ui/texts/SmallText.dart';
 
 void main() {
@@ -120,7 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
             //   'You have pushed the button this many times:',
             // ),
             const SmallText('Nicolas'),
-            StandardTextField("Enter Username", "Username", _onTextChange),
+            StandardTextField("Enter Username", "", _onTextChange),
             LoginButton("Incrementer", _incrementCounter),
             // const Text("data"),
             Text(

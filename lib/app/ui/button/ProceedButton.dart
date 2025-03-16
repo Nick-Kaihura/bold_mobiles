@@ -12,7 +12,8 @@ class LoginButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        width: 400.0,
+        width: 343,
+        height: 56,
         child: ElevatedButton(
           onPressed: onPressed,
           style: ElevatedButton.styleFrom(
