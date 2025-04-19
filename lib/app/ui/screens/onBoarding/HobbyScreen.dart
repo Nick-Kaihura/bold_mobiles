@@ -48,23 +48,25 @@ class _HobbyScreenState extends State<HobbyScreen> {
                       children: [
                         Container(
                           padding: const EdgeInsets.fromLTRB(0, 20, 0, 5),
-                          child: Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                StandardInterestsButton(
-                                    buttonText: "Sample Text",
-                                    onPressed: submitInterests,
-                                    color: Colors.black),
-                                StandardInterestsButton(
-                                    buttonText: "Photography",
-                                    onPressed: submitInterests,
-                                    color: Colors.black),
-                                StandardInterestsButton(
-                                    buttonText: "Writing/Blogging",
-                                    onPressed: submitInterests,
-                                    color: Colors.black)
-                              ]),
+                          child: SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    StandardInterestsButton(
+                                        buttonText: "Sample Text",
+                                        onPressed: submitInterests,
+                                        color: Colors.black),
+                                    StandardInterestsButton(
+                                        buttonText: "Photography",
+                                        onPressed: submitInterests,
+                                        color: Colors.black),
+                                    StandardInterestsButton(
+                                        buttonText: "Writing/Blogging",
+                                        onPressed: submitInterests,
+                                        color: Colors.black)
+                                  ])),
                         ),
                         Container(
                           padding: const EdgeInsets.fromLTRB(0, 0, 0, 5),
@@ -96,23 +98,30 @@ class _HobbyScreenState extends State<HobbyScreen> {
                         ),
                         Container(
                           padding: const EdgeInsets.fromLTRB(0, 0, 0, 5),
-                          child: Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                StandardInterestsButton(
-                                    buttonText: "Hiking",
-                                    onPressed: submitInterests,
-                                    color: Colors.black),
-                                StandardInterestsButton(
-                                    buttonText: "Swimming",
-                                    onPressed: submitInterests,
-                                    color: Colors.black),
-                                StandardInterestsButton(
-                                    buttonText: "Yoga",
-                                    onPressed: submitInterests,
-                                    color: Colors.black)
-                              ]),
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  StandardInterestsButton(
+                                      buttonText: "Hiking",
+                                      onPressed: submitInterests,
+                                      color: Colors.black),
+                                  StandardInterestsButton(
+                                      buttonText: "Running",
+                                      onPressed: submitInterests,
+                                      color: Colors.black),
+                                  StandardInterestsButton(
+                                      buttonText: "Swimming",
+                                      onPressed: submitInterests,
+                                      color: Colors.black),
+                                  StandardInterestsButton(
+                                      buttonText: "Yoga",
+                                      onPressed: submitInterests,
+                                      color: Colors.black)
+                                ]),
+                          ),
                         ),
                         Container(
                           padding: const EdgeInsets.fromLTRB(0, 0, 0, 5),
@@ -132,23 +141,26 @@ class _HobbyScreenState extends State<HobbyScreen> {
                         ),
                         Container(
                           padding: const EdgeInsets.fromLTRB(0, 0, 0, 5),
-                          child: Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                StandardInterestsButton(
-                                    buttonText: "Coding",
-                                    onPressed: submitInterests,
-                                    color: Colors.black),
-                                StandardInterestsButton(
-                                    buttonText: "Video Gaming",
-                                    onPressed: submitInterests,
-                                    color: Colors.black),
-                                StandardInterestsButton(
-                                    buttonText: "Graphic design",
-                                    onPressed: submitInterests,
-                                    color: Colors.black),
-                              ]),
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  StandardInterestsButton(
+                                      buttonText: "Coding",
+                                      onPressed: submitInterests,
+                                      color: Colors.black),
+                                  StandardInterestsButton(
+                                      buttonText: "Video Gaming",
+                                      onPressed: submitInterests,
+                                      color: Colors.black),
+                                  StandardInterestsButton(
+                                      buttonText: "Graphic design",
+                                      onPressed: submitInterests,
+                                      color: Colors.black),
+                                ]),
+                          ),
                         ),
                         Container(
                           padding: const EdgeInsets.fromLTRB(0, 0, 0, 5),
