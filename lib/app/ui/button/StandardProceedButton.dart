@@ -1,25 +1,25 @@
-import 'package:bold/app/constants/ColorConstants.dart';
 import 'package:flutter/material.dart';
 
+import '../../constants/ColorConstants.dart';
 import '../../util/ColorUtil.dart';
+import '../texts/SmallText.dart';
 
-class LoginButton extends StatelessWidget {
+class StandardProceedButton extends StatelessWidget {
   final String buttonText;
   final VoidCallback onPressed;
 
-  const LoginButton(this.buttonText, this.onPressed);
+  const StandardProceedButton(this.buttonText, this.onPressed);
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        width: 343,
-        height: 56,
-        child: ElevatedButton(
+      height: 52,
+      child: ElevatedButton(
           onPressed: onPressed,
           style: ElevatedButton.styleFrom(
               backgroundColor:
                   ColorUtil().getColor(ColorConstants().baseColorHex)),
-          child: Text(buttonText),
-        ));
+          child: SmallText(buttonText, Colors.white)),
+    );
   }
 }
