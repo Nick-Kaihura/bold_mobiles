@@ -8,7 +8,7 @@ class DayInput extends StatelessWidget {
   final Function onTextChange;
   final bool autoFocus;
 
-  const DayInput(this.onTextChange, this.autoFocus);
+  const DayInput(this.onTextChange, this.autoFocus, {super.key});
 
   @override
   Widget build(BuildContext context) {

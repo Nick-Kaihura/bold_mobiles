@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../button/EmailSignupButton.dart';
 import '../../button/GoogleSignupButton.dart';
+import '../../button/StandardOutlinedButton.dart';
 import '../../texts/LargeText.dart';
 import '../../texts/SmallText.dart';
 
@@ -52,7 +52,7 @@ class _SignUpScreen extends State<SignUpScreen> {
                     GoogleSignupButton(
                         "Continue with Google", handleGoogleSignup),
                     const SizedBox(height: 20),
-                    EmailSignupButton("Email Address", handleEmailSignup)
+                    StandardOutlinedButton("Email Address", handleEmailSignup)
                   ],
                 )
               ],

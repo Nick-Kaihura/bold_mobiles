@@ -5,13 +5,16 @@ import '../../util/ColorUtil.dart';
 import '../texts/SmallText.dart';
 
 class StandardInterestsButton extends StatefulWidget {
-  String buttonText;
-  Function onPressed;
-  Color color;
-  bool isPressed = true;
+  final String buttonText;
+  final Function onPressed;
+  final Color color;
+  final bool isPressed = true;
 
-  StandardInterestsButton(
-      {required this.buttonText, required this.onPressed, required this.color});
+  const StandardInterestsButton(
+      {super.key,
+      required this.buttonText,
+      required this.onPressed,
+      required this.color});
 
   @override
   State<StatefulWidget> createState() {

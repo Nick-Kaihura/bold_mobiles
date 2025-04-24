@@ -4,7 +4,7 @@ class SmallText extends StatelessWidget {
   final String text;
   final Color textColor;
 
-  const SmallText(this.text, this.textColor);
+  const SmallText(this.text, this.textColor, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class SmallText extends StatelessWidget {
       child: Text(
           textAlign: TextAlign.start,
           style: TextStyle(
-              color: textColor, fontFamily: "Inter_18pt-Thin", fontSize: 16),
+              color: textColor, fontFamily: "Inter_24pt-Bold", fontSize: 16),
           text),
     );
   }

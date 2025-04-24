@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SearchTextField extends StatelessWidget {
+  const SearchTextField({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -8,8 +10,8 @@ class SearchTextField extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          IconButton(onPressed: () => {}, icon: Icon(Icons.search)),
-          SearchBar()
+          IconButton(onPressed: () => {}, icon: const Icon(Icons.search)),
+          const SearchBar()
         ],
       ),
     );

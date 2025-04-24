@@ -4,7 +4,7 @@ class LargeText extends StatelessWidget {
   final String text;
   final Color textColor;
 
-  const LargeText(this.text, this.textColor);
+  const LargeText(this.text, this.textColor, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class LargeText extends StatelessWidget {
       child: Text(
           textAlign: TextAlign.start,
           style: TextStyle(
-              color: textColor, fontFamily: "Inter_18pt-Thin", fontSize: 40),
+              color: textColor, fontFamily: "Inter_24pt-Bold", fontSize: 40),
           text),
     );
   }

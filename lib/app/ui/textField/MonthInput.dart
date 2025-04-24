@@ -8,7 +8,7 @@ class MonthInput extends StatelessWidget {
   final Function onTextChange;
   final bool autoFocus;
 
-  const MonthInput(this.onTextChange, this.autoFocus);
+  const MonthInput(this.onTextChange, this.autoFocus, {super.key});
 
   @override
   Widget build(BuildContext context) {

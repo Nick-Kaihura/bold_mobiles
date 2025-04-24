@@ -7,7 +7,7 @@ import '../texts/SmallText.dart';
 class WomenInterestsButton extends StatefulWidget {
   final VoidCallback onPressed;
 
-  WomenInterestsButton(this.onPressed);
+  const WomenInterestsButton(this.onPressed, {super.key});
 
   @override
   State<StatefulWidget> createState() {

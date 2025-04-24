@@ -31,10 +31,10 @@ class _EmailScreesState extends State<EmailScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const LargeText(
+                  LargeText(
                       "Please provide a valid email address", Colors.black),
                   SizedBox(height: 5),
-                  const SmallText(
+                  SmallText(
                       "Enter the email address you will use for this account",
                       Colors.black),
                 ],

@@ -7,7 +7,7 @@ class FloatingProceedButton extends StatelessWidget {
   final VoidCallback onPressed;
   final Color color;
 
-  const FloatingProceedButton(this.buttonText, this.onPressed, this.color);
+  const FloatingProceedButton(this.buttonText, this.onPressed, this.color, {super.key});
 
   @override
   Widget build(BuildContext context) {

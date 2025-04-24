@@ -7,7 +7,7 @@ import '../texts/SmallText.dart';
 class NonBinaryInterestBuutton extends StatefulWidget {
   final VoidCallback onPressed;
 
-  NonBinaryInterestBuutton(this.onPressed);
+  const NonBinaryInterestBuutton(this.onPressed, {super.key});
 
   @override
   State<StatefulWidget> createState() {

@@ -6,6 +6,8 @@ import '../../texts/LargeText.dart';
 import '../../texts/SmallText.dart';
 
 class TargetScreen extends StatefulWidget {
+  const TargetScreen({super.key});
+
   @override
   State<StatefulWidget> createState() {
     return _TargetScreen();

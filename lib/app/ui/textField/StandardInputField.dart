@@ -10,7 +10,7 @@ class StandardTextField extends StatelessWidget {
   final bool autoFocus;
 
   const StandardTextField(
-      this.hint, this.label, this.onTextChange, this.autoFocus);
+      this.hint, this.label, this.onTextChange, this.autoFocus, {super.key});
 
   @override
   Widget build(BuildContext context) {

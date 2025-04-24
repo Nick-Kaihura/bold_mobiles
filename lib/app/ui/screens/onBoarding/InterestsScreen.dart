@@ -9,6 +9,8 @@ import '../../texts/LargeText.dart';
 import '../../texts/SmallText.dart';
 
 class InterestsScreen extends StatefulWidget {
+  const InterestsScreen({super.key});
+
   @override
   State<StatefulWidget> createState() {
     return _InterestsScreenState();

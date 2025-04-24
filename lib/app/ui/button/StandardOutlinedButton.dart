@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import '../../constants/ColorConstants.dart';
 import '../../util/ColorUtil.dart';
 
-class EmailSignupButton extends StatelessWidget {
+class StandardOutlinedButton extends StatelessWidget {
   final String buttonText;
   final VoidCallback onPressed;
 
-  const EmailSignupButton(this.buttonText, this.onPressed);
+  const StandardOutlinedButton(this.buttonText, this.onPressed, {super.key});
 
   @override
   Widget build(BuildContext context) {

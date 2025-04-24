@@ -4,7 +4,7 @@ class MediumText extends StatelessWidget {
   final String text;
   final textColor;
 
-  const MediumText(this.text, this.textColor);
+  const MediumText(this.text, this.textColor, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class MediumText extends StatelessWidget {
       child: Text(
           textAlign: TextAlign.center,
           style: TextStyle(
-              color: textColor, fontFamily: "Inter_18pt-Thin", fontSize: 30),
+              color: textColor, fontFamily: "Inter_24pt-Bold", fontSize: 30),
           text),
     );
   }

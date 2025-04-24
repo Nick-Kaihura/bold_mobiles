@@ -30,6 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+    
+  http: ^0.13.3
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -75,9 +77,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Inter_18pt-Thin
+    - family: Inter_24pt-Bold
       fonts:
-      - asset: lib/assets/fonts/Inter_18pt-Thin.ttf
+      - asset: lib/assets/fonts/Inter_24pt-Bold.ttf
         style: normal
         weight: 700
   #

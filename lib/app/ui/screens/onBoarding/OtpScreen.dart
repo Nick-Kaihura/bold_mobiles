@@ -6,6 +6,8 @@ import '../../texts/LargeText.dart';
 import '../../texts/SmallText.dart';
 
 class OtpScreen extends StatefulWidget {
+  const OtpScreen({super.key});
+
   @override
   State<StatefulWidget> createState() {
     return OtpScreenState();

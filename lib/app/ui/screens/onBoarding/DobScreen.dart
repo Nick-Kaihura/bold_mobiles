@@ -8,6 +8,8 @@ import '../../textField/YearInput.dart';
 import '../../texts/SmallText.dart';
 
 class DobScreen extends StatefulWidget {
+  const DobScreen({super.key});
+
   @override
   State<StatefulWidget> createState() {
     return _DobScreenState();
