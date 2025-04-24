@@ -1,7 +1,9 @@
+import 'package:Bold/app/constants/ColorConstants.dart';
 import 'package:Bold/app/ui/button/StandardOutlinedButton.dart';
 import 'package:Bold/app/ui/button/StandardProceedButton.dart';
 import 'package:Bold/app/ui/texts/LargeText.dart';
 import 'package:Bold/app/ui/texts/SmallText.dart';
+import 'package:Bold/app/util/ColorUtil.dart';
 import 'package:flutter/material.dart';
 
 class ProfileVerifyScreen extends StatefulWidget {
@@ -23,29 +25,82 @@ class _ProfileVerifyScreenState extends State<ProfileVerifyScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const Column(
+            Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  LargeText("Verify your profile", Colors.black),
-                  SizedBox(height: 10),
-                  SmallText(
+                  const LargeText("Verify your profile", Colors.black),
+                  const SizedBox(height: 10),
+                  const SmallText(
                       "Take two selfies to verify your profile. These photos will not appear on your profile",
-                      Colors.black)
+                      Colors.black),
+                  const SizedBox(height: 20),
+                  Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Card.outlined(
+                          child: SizedBox(
+                            height: 180,
+                            width: 180,
+                            child: Padding(
+                              padding: const EdgeInsets.all(5),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    alignment: Alignment.centerRight,
+                                    child: IconButton.filled(
+                                      style: IconButton.styleFrom(
+                                          foregroundColor: Colors.white,
+                                          backgroundColor: ColorUtil().getColor(
+                                              ColorConstants().baseColorHex)),
+                                      icon: const Icon(Icons.add),
+                                      onPressed: () {},
+                                    ),
+                                  ),
+                                  const Center(
+                                    child: Padding(
+                                      padding: EdgeInsets.all(2),
+                                      child: SizedBox(),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                        Card.outlined(
+                          child: SizedBox(
+                            height: 180,
+                            width: 180,
+                            child: Padding(
+                              padding: const EdgeInsets.all(5),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    alignment: Alignment.centerRight,
+                                    child: IconButton.filled(
+                                      style: IconButton.styleFrom(
+                                          foregroundColor: Colors.white,
+                                          backgroundColor: ColorUtil().getColor(
+                                              ColorConstants().baseColorHex)),
+                                      icon: const Icon(Icons.add),
+                                      onPressed: () {},
+                                    ),
+                                  ),
+                                  const Center(
+                                    child: Padding(
+                                      padding: EdgeInsets.all(2),
+                                      child: SizedBox(),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        )
+                      ])
                 ]),
             const SizedBox(height: 10),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  decoration: const BoxDecoration(
-                      shape: BoxShape.rectangle,
-                      color: Colors.red,
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                )
-              ],
-            ),
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.stretch,
