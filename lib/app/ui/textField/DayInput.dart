@@ -19,6 +19,7 @@ class DayInput extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             const SmallText("Day", Colors.black),
+            const SizedBox(height: 5),
             TextField(
                 autofocus: autoFocus,
                 decoration: InputDecoration(

@@ -1,3 +1,4 @@
+import 'package:Bold/app/ui/screens/onBoarding/EmailScreen.dart';
 import 'package:flutter/material.dart';
 
 import '../../button/GoogleSignupButton.dart';
@@ -60,10 +61,12 @@ class _SignUpScreen extends State<SignUpScreen> {
   }
 
   void handleGoogleSignup() {
-    //
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => const EmailScreen()));
   }
 
   void handleEmailSignup() {
-    //
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => const EmailScreen()));
   }
 }

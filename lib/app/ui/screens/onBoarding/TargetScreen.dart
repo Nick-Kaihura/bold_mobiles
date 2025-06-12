@@ -1,3 +1,4 @@
+import 'package:Bold/app/ui/screens/onBoarding/HobbyScreen.dart';
 import 'package:flutter/material.dart';
 
 import '../../button/StandardInterestsButton.dart';
@@ -99,5 +100,8 @@ class _TargetScreen extends State<TargetScreen> {
     );
   }
 
-  void submitInterests() {}
+  void submitInterests() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => const HobbyScreen()));
+  }
 }

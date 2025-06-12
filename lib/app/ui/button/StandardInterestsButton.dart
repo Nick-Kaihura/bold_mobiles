@@ -40,7 +40,7 @@ class _ButtonState extends State<StandardInterestsButton> {
               side: BorderSide(
                   color: ColorUtil()
                       .getColor(ColorConstants().interestButtonBgColor),
-                  width: 1.5,
+                  width: 1,
                   style: BorderStyle.solid,
                   strokeAlign: BorderSide.strokeAlignCenter),
               backgroundColor: isClicked

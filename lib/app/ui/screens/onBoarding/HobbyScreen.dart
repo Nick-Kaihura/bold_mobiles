@@ -1,3 +1,4 @@
+import 'package:Bold/app/ui/screens/onBoarding/ProfileVerifyScreen.dart';
 import 'package:flutter/material.dart';
 
 import '../../button/StandardInterestsButton.dart';
@@ -291,7 +292,10 @@ class _HobbyScreenState extends State<HobbyScreen> {
     ])));
   }
 
-  void submitInterests() {}
+  void submitInterests() {
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => const ProfileVerifyScreen()));
+  }
 
   void addHobby(String hobby) {}
 }

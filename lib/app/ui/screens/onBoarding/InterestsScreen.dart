@@ -1,4 +1,5 @@
 import 'package:Bold/app/ui/button/BothInterestButton.dart';
+import 'package:Bold/app/ui/screens/onBoarding/TargetScreen.dart';
 import 'package:flutter/material.dart';
 
 import '../../button/MenInterestButton.dart';
@@ -89,5 +90,8 @@ class _InterestsScreenState extends State<InterestsScreen> {
     );
   }
 
-  void submitInterests() {}
+  void submitInterests() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => const TargetScreen()));
+  }
 }

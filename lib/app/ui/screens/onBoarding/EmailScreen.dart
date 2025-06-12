@@ -1,3 +1,4 @@
+import 'package:Bold/app/ui/screens/onBoarding/OtpScreen.dart';
 import 'package:flutter/material.dart';
 
 import '../../button/StandardProceedButton.dart';
@@ -68,7 +69,7 @@ class _EmailScreesState extends State<EmailScreen> {
   }
 
   void handleSubmit() {
-    //validate input/email
-    print(emailAddress);
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => const OtpScreen()));
   }
 }

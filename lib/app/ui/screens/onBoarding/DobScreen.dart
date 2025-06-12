@@ -1,3 +1,4 @@
+import 'package:Bold/app/ui/screens/onBoarding/InterestsScreen.dart';
 import 'package:Bold/app/ui/texts/LargeText.dart';
 import 'package:flutter/material.dart';
 
@@ -53,7 +54,10 @@ class _DobScreenState extends State<DobScreen> {
     );
   }
 
-  void validateDob() {}
+  void validateDob() {
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => const InterestsScreen()));
+  }
 
   void handleDayChange() {}
 

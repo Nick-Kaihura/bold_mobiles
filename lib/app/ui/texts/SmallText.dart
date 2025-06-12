@@ -12,8 +12,7 @@ class SmallText extends StatelessWidget {
       padding: EdgeInsets.zero,
       child: Text(
           textAlign: TextAlign.start,
-          style: TextStyle(
-              color: textColor, fontFamily: "Inter_24pt-Bold", fontSize: 16),
+          style: TextStyle(color: textColor, fontSize: 13),
           text),
     );
   }

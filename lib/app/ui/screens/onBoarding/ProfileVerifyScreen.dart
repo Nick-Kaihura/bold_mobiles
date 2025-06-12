@@ -1,6 +1,7 @@
 import 'package:Bold/app/constants/ColorConstants.dart';
 import 'package:Bold/app/ui/button/StandardOutlinedButton.dart';
 import 'package:Bold/app/ui/button/StandardProceedButton.dart';
+import 'package:Bold/app/ui/dialogs/ProfileVerificationDialog.dart';
 import 'package:Bold/app/ui/texts/LargeText.dart';
 import 'package:Bold/app/ui/texts/SmallText.dart';
 import 'package:Bold/app/util/ColorUtil.dart';
@@ -40,8 +41,8 @@ class _ProfileVerifyScreenState extends State<ProfileVerifyScreen> {
                       children: [
                         Card.outlined(
                           child: SizedBox(
-                            height: 180,
-                            width: 180,
+                            height: 150,
+                            width: 150,
                             child: Padding(
                               padding: const EdgeInsets.all(5),
                               child: Column(
@@ -70,8 +71,8 @@ class _ProfileVerifyScreenState extends State<ProfileVerifyScreen> {
                         ),
                         Card.outlined(
                           child: SizedBox(
-                            height: 180,
-                            width: 180,
+                            height: 150,
+                            width: 150,
                             child: Padding(
                               padding: const EdgeInsets.all(5),
                               child: Column(
@@ -123,7 +124,13 @@ class _ProfileVerifyScreenState extends State<ProfileVerifyScreen> {
     );
   }
 
-  void takeSelfie() {}
+  void takeSelfie() {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return const ProfileVerificationDialog();
+        });
+  }
 
   void skipVerification() {}
 }

@@ -1,4 +1,5 @@
 import 'package:Bold/app/ui/button/StandardProceedButton.dart';
+import 'package:Bold/app/ui/screens/onBoarding/DobScreen.dart';
 import 'package:Bold/app/ui/textField/StandardInputField.dart';
 import 'package:flutter/material.dart';
 
@@ -64,9 +65,14 @@ class OtpScreenState extends State<OtpScreen> {
     );
   }
 
-  void handleOtpVerification() {}
+  void handleOtpVerification() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => const DobScreen()));
+  }
 
-  void handleResendCode() {}
+  void handleResendCode() {
+    Navigator.pop(context);
+  }
 
   void handleOtpTextChange() {}
 }

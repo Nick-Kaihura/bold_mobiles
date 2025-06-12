@@ -19,6 +19,7 @@ class YearInput extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             const SmallText("Year", Colors.black),
+            const SizedBox(height: 5),
             TextField(
                 autofocus: autoFocus,
                 decoration: InputDecoration(
