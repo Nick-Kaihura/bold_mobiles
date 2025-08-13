@@ -1,4 +1,3 @@
-import 'package:Bold/app/ui/screens/onBoarding/InterestsScreen.dart';
 import 'package:Bold/app/ui/texts/LargeText.dart';
 import 'package:flutter/material.dart';
 
@@ -7,6 +6,7 @@ import '../../textField/DayInput.dart';
 import '../../textField/MonthInput.dart';
 import '../../textField/YearInput.dart';
 import '../../texts/SmallText.dart';
+import 'InterestsScreen.dart';
 
 class DobScreen extends StatefulWidget {
   const DobScreen({super.key});

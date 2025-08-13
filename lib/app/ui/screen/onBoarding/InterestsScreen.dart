@@ -1,21 +1,24 @@
-import 'package:Bold/app/ui/screens/onBoarding/HobbyScreen.dart';
+import 'package:Bold/app/ui/button/BothInterestButton.dart';
 import 'package:flutter/material.dart';
 
-import '../../button/StandardInterestsButton.dart';
+import '../../button/MenInterestButton.dart';
+import '../../button/NonBinaryInterestButton.dart';
 import '../../button/StandardProceedButton.dart';
+import '../../button/WomenInterestButton.dart';
 import '../../texts/LargeText.dart';
 import '../../texts/SmallText.dart';
+import 'TargetScreen.dart';
 
-class TargetScreen extends StatefulWidget {
-  const TargetScreen({super.key});
+class InterestsScreen extends StatefulWidget {
+  const InterestsScreen({super.key});
 
   @override
   State<StatefulWidget> createState() {
-    return _TargetScreen();
+    return _InterestsScreenState();
   }
 }
 
-class _TargetScreen extends State<TargetScreen> {
+class _InterestsScreenState extends State<InterestsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,12 +32,10 @@ class _TargetScreen extends State<TargetScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                const LargeText("What Are You Hoping to Find?", Colors.black),
-                const SmallText(
-                    "Tell us what you are looking for.", Colors.black),
-                const SmallText(
-                    "This helps us create better connections for you.",
+                const LargeText("Who Are You Interested In?", Colors.black),
+                const SmallText("Let us know who you'd like to connect with.",
                     Colors.black),
+                const SmallText("Select one to get started.", Colors.black),
                 Container(
                   padding: const EdgeInsets.fromLTRB(0, 20, 0, 20),
                   child: Row(
@@ -52,17 +53,11 @@ class _TargetScreen extends State<TargetScreen> {
                                     MainAxisAlignment.spaceEvenly,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  StandardInterestsButton(
-                                      buttonText: "Love",
-                                      onPressed: submitInterests,
-                                      color: Colors.black),
+                                  MenInterestsButton(submitInterests),
                                   const SizedBox(
                                     width: 5,
                                   ),
-                                  StandardInterestsButton(
-                                      buttonText: "A serious Relationship",
-                                      onPressed: submitInterests,
-                                      color: Colors.black)
+                                  WomenInterestsButton(submitInterests)
                                 ]),
                           ),
                           Container(
@@ -72,18 +67,13 @@ class _TargetScreen extends State<TargetScreen> {
                                     MainAxisAlignment.spaceEvenly,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  StandardInterestsButton(
-                                    buttonText: "Casual Dates",
-                                    onPressed: submitInterests,
-                                    color: Colors.black,
+                                  NonBinaryInterestBuutton(
+                                    submitInterests,
                                   ),
                                   const SizedBox(
                                     width: 5,
                                   ),
-                                  StandardInterestsButton(
-                                      buttonText: "Exploring Connections",
-                                      onPressed: submitInterests,
-                                      color: Colors.black)
+                                  BothInterestButton(submitInterests)
                                 ]),
                           )
                         ],
@@ -102,6 +92,6 @@ class _TargetScreen extends State<TargetScreen> {
 
   void submitInterests() {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => const HobbyScreen()));
+        context, MaterialPageRoute(builder: (context) => const TargetScreen()));
   }
 }
