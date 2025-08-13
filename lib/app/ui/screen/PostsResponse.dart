@@ -1,4 +1,4 @@
-import 'package:Bold/app/ui/screens/Post.dart';
+import 'package:Bold/app/ui/screen/Post.dart';
 
 class PostsResponse {
   List<Post> posts;

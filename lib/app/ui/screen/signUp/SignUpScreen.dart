@@ -1,4 +1,4 @@
-import 'package:Bold/app/ui/screens/onBoarding/EmailScreen.dart';
+import 'package:Bold/app/ui/screen/onBoarding/EmailScreen.dart';
 import 'package:flutter/material.dart';
 
 import '../../button/GoogleSignupButton.dart';

@@ -1,6 +1,7 @@
-import 'package:Bold/app/ui/dialogs/ProfileVerificationDialog.dart';
-import 'package:Bold/app/ui/screens/Post.dart';
 import 'package:flutter/material.dart';
+
+import '../../dialog/ProfileVerificationDialog.dart';
+import '../Post.dart';
 
 class SampleInternetCaller extends StatefulWidget {
   const SampleInternetCaller({super.key});

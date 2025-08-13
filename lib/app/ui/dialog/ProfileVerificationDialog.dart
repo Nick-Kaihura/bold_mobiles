@@ -1,6 +1,7 @@
 import 'package:Bold/app/ui/button/StandardProceedButton.dart';
-import 'package:Bold/app/ui/screens/HomeScreen.dart';
 import 'package:flutter/material.dart';
+
+import '../screen/HomeScreen.dart';
 
 class ProfileVerificationDialog extends StatefulWidget {
   const ProfileVerificationDialog({super.key});

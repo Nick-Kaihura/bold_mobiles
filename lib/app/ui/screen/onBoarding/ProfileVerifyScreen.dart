@@ -1,11 +1,12 @@
 import 'package:Bold/app/constants/ColorConstants.dart';
 import 'package:Bold/app/ui/button/StandardOutlinedButton.dart';
 import 'package:Bold/app/ui/button/StandardProceedButton.dart';
-import 'package:Bold/app/ui/dialogs/ProfileVerificationDialog.dart';
 import 'package:Bold/app/ui/texts/LargeText.dart';
 import 'package:Bold/app/ui/texts/SmallText.dart';
 import 'package:Bold/app/util/ColorUtil.dart';
 import 'package:flutter/material.dart';
+
+import '../../dialog/ProfileVerificationDialog.dart';
 
 class ProfileVerifyScreen extends StatefulWidget {
   const ProfileVerifyScreen({super.key});

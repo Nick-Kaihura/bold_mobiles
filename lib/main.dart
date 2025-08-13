@@ -1,4 +1,4 @@
-import 'package:Bold/app/ui/screens/signUp/SignUpScreen.dart';
+import 'package:Bold/app/ui/screen/signUp/SignUpScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

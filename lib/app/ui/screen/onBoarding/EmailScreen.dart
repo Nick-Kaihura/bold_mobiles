@@ -1,10 +1,10 @@
-import 'package:Bold/app/ui/screens/onBoarding/OtpScreen.dart';
 import 'package:flutter/material.dart';
 
 import '../../button/StandardProceedButton.dart';
 import '../../textField/StandardInputField.dart';
 import '../../texts/LargeText.dart';
 import '../../texts/SmallText.dart';
+import 'OtpScreen.dart';
 
 class EmailScreen extends StatefulWidget {
   const EmailScreen({super.key});
