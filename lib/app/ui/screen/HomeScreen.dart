@@ -1,5 +1,5 @@
 import 'package:Bold/app/ui/screen/chat/ChatDashboard.dart';
-import 'package:Bold/app/ui/screen/profile/ProfileScreen.dart';
+import 'package:Bold/app/ui/screen/chat/ChatScreen.dart';
 import 'package:flutter/material.dart';
 
 import 'RecommendedScreen.dart';
@@ -57,7 +57,7 @@ class HomeState extends State<HomeScreen> with SingleTickerProviderStateMixin {
         ]),
       ),
       body: TabBarView(controller: controller, children: [
-        ProfileScreen(controller),
+        ChatScreen(controller),
         ChatDashboard(controller),
         RecommendedScreen(controller)
       ]),
