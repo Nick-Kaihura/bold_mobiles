@@ -1,3 +1,4 @@
+import 'package:Bold/app/ui/screen/MatchScreen.dart';
 import 'package:Bold/app/ui/screen/chat/ChatDashboard.dart';
 import 'package:Bold/app/ui/screen/chat/ChatScreen.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class HomeState extends State<HomeScreen> with SingleTickerProviderStateMixin {
 
   @override
   initState() {
-    controller = TabController(length: 3, vsync: this);
+    controller = TabController(length: 5, vsync: this);
     controller.addListener(() {
       setState(() {});
     });
@@ -49,15 +50,19 @@ class HomeState extends State<HomeScreen> with SingleTickerProviderStateMixin {
             text: "Discover",
           ),
           Tab(
+            text: "Match",
+          ),
+          Tab(
             text: "Search",
           ),
           Tab(
             text: "Recommended",
-          )
+          ),
         ]),
       ),
       body: TabBarView(controller: controller, children: [
         ChatScreen(controller),
+        MatchScreen(controller),
         ChatDashboard(controller),
         RecommendedScreen(controller)
       ]),
