@@ -23,7 +23,7 @@ jobs:
       - name: install Java
         uses: actions/setup-java@v4 #Enable maven to cache dependencies for fater builds
         with:
-          ditribution: "temurin"
+          distribution: "temurin"
           java-version: "17"
           
       - name: Build with maven #This step runs the tests
