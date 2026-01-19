@@ -1,0 +1,36 @@
+name : service ci 
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop  
+
+jobs:
+  build:
+  
+    runs-on: macos-latest #This step tell githut to spin macos vm
+    
+    steps:
+    
+      - name: Checkout source
+        uses: actions/checkout@v4 #This line checkout the repo
+
+      - name: Install java #This step installs java
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: '17'
+          cache: 'maven' #Enable maven to cache dependencies for fater builds
+          
+      - name: Build with maven #This step runs the tests
+        run: mvn clean verify | echo 'Running tests ------------'
+          
+    
+  
+
+  
