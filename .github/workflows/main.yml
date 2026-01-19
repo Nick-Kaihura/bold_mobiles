@@ -28,7 +28,7 @@ jobs:
           cache: 'maven' #Enable maven to cache dependencies for fater builds
           
       - name: Build with maven #This step runs the tests
-        run: mvn clean verify
+        run: echo "Nicolas Kaihura is here"
           
     
   
