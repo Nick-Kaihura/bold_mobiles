@@ -23,7 +23,7 @@ jobs:
       # #Enable maven to cache dependencies for fater builds
           
       - name: Build with maven #This step runs the tests
-        run: echo "Nicolas Kaihura is here"
+        run: echo "${{secrets.GITHUB_TOKEN}}"
           
     
   
