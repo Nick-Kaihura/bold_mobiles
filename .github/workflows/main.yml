@@ -13,7 +13,7 @@ on:
 jobs:
   build:
   
-    runs-on: macos-latest #This step tell githut to spin macos vm
+    runs-on: ubuntu-latest #This step tell githut to spins up an ubuntu vm
     
     steps:
     
@@ -28,7 +28,7 @@ jobs:
           cache: 'maven' #Enable maven to cache dependencies for fater builds
           
       - name: Build with maven #This step runs the tests
-        run: mvn clean verify | echo 'Running tests ------------'
+        run: mvn clean verify
           
     
   
