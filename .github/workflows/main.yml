@@ -20,12 +20,7 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4 #This line checkout the repo
 
-      - name: Install java #This step installs java
-        uses: actions/setup-java@v4
-        with:
-          distribution: "temurin"
-          java-version: '17'
-          cache: 'maven' #Enable maven to cache dependencies for fater builds
+      # #Enable maven to cache dependencies for fater builds
           
       - name: Build with maven #This step runs the tests
         run: echo "Nicolas Kaihura is here"
